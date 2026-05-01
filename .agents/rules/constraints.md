@@ -33,6 +33,14 @@ The reader sees one platform. They are not aware that other organisations are us
 - "Administrators" / "users in your organisation"
 - "Sign in" without referring to which portal it routes to
 
+### Exception — technical identifiers the reader has to type
+
+Some technical identifiers — HTTP headers, query parameters, configuration keys — contain the word "tenant" because that's their literal name in the platform. The reader has to type these names exactly for a request to succeed. In that narrow case:
+
+- **Use the literal name** so the reader's request actually works. For example, an API request must include the `X-Tenant` header.
+- **Frame what it represents in neutral terms** — "an identifier for your platform instance", "issued to your organisation when the platform is set up". Do **not** explain that the platform is multi-tenant or that other organisations are using the same software.
+- **Apply this carve-out only on pages that document the API directly.** UI-driven pages should not need to surface these identifiers — the portal sends them on the reader's behalf.
+
 ## 3. UI-First, API-Fallback
 
 These docs are primarily a guide to using the platform's UI. Default to screenshots and step-by-step instructions; keep implementation detail out.

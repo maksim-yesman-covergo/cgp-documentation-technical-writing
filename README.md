@@ -47,7 +47,7 @@ The platform is organised around a set of capabilities you can use independently
 
 Sign in with email and password, single sign-on, or an external identity provider. Manage your sessions and keep accounts safe.
 
-➡ [Authentication](todo-authentication/README.md) · [Identity Providers](todo-authentication/todo-identity-providers.md)
+➡ [Authentication](authentication/README.md) · [Identity Providers](authentication/identity-providers.md)
 
 </details>
 
@@ -57,7 +57,7 @@ Sign in with email and password, single sign-on, or an external identity provide
 
 Manage users, group them by team or function, assign roles that bundle the right permissions, and control access to resources at the level of detail your business needs.
 
-➡ [Identity and Access](todo-identity-and-access/README.md) · [Users](todo-identity-and-access/todo-users.md) · [Roles](todo-identity-and-access/todo-roles.md) · [User Groups](todo-identity-and-access/todo-user-groups.md) · [Authorisation Resources](todo-identity-and-access/todo-authorisation-resources.md)
+➡ [Identity and Access](identity-and-access/README.md) · [Users](identity-and-access/users.md) · [User Groups](identity-and-access/user-groups.md) · [Roles](identity-and-access/roles.md) · [Authorisation Resources](identity-and-access/authorisation-resources.md)
 
 </details>
 
@@ -182,7 +182,7 @@ Whether you've just been invited to the platform or you've been handed the keys 
 
 ### 1. Sign in for the first time
 
-Open the link your administrator sent you and set your password. → [Authentication](todo-authentication/README.md)
+Open the link your administrator sent you and set your password. → [Authentication](authentication/README.md)
 
 ### 2. Find your way around
 
@@ -194,7 +194,7 @@ Pick the capability that brought you here — managing users, configuring a rule
 
 ### 4. _(Admins)_ Set up your team
 
-Create user groups, assign roles, and invite teammates. Once the team is in, configure the data model, rules, workflows, and notifications that power your business. → [Identity and Access](todo-identity-and-access/README.md)
+Create user groups, assign roles, and invite teammates. Once the team is in, configure the data model, rules, workflows, and notifications that power your business. → [Identity and Access](identity-and-access/README.md)
 
 ## How this guide is organised
 
@@ -232,4 +232,4 @@ Code, identifiers, and field names appear in `monospace`. Screenshots show the p
 
 ***
 
-Ready when you are. Pick a chapter from the left, or start with [Authentication](todo-authentication/README.md) and follow the trail.
+Ready when you are. Pick a chapter from the left, or start with [Authentication](authentication/README.md) and follow the trail.
