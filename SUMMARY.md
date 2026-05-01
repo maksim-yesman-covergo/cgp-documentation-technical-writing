@@ -1,6 +1,6 @@
 # Table of contents
 
-* [\[TODO\] Welcome](README.md)
+* [Welcome](README.md)
 * [\[TODO\] Authentication](todo-authentication/README.md)
   * [\[TODO\] Identity Providers](todo-authentication/todo-identity-providers.md)
 * [\[TODO\] Identity and Access](todo-identity-and-access/README.md)
