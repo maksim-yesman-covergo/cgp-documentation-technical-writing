@@ -4,6 +4,7 @@ description: >-
   operate, and get the most out of every capability the platform offers.
 icon: hand-wave
 layout:
+  width: wide
   title:
     visible: true
   description:
