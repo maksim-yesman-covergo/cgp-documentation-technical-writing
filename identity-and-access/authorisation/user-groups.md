@@ -27,7 +27,7 @@ User groups are managed in **Identity and Access → User Groups**. A user can b
 3. Sort by **Last updated** to find recently changed groups, or by **Number of users** for the busy ones.
 4. Click any row to open that group's detail page.
 
-![The User Groups list with name, ID, number of users, and last-updated columns.](../.gitbook/assets/identity-and-access/user-groups-list.png)
+![The User Groups list with name, ID, number of users, and last-updated columns.](../../.gitbook/assets/identity-and-access/user-groups-list.png)
 
 ## How to create a user group
 
@@ -40,7 +40,7 @@ User groups are managed in **Identity and Access → User Groups**. A user can b
 
 The new group opens with no users, roles, or permissions assigned yet.
 
-![The Create User Group dialog with Name, ID, and Description fields.](../.gitbook/assets/identity-and-access/create-user-group.png)
+![The Create User Group dialog with Name, ID, and Description fields.](../../.gitbook/assets/identity-and-access/create-user-group.png)
 
 ## How to view a user group
 
@@ -49,7 +49,7 @@ The new group opens with no users, roles, or permissions assigned yet.
     - **Access** — the roles and permissions assigned to the group.
     - **Users** — the users in the group.
 
-![A user group's detail page on the Access tab, showing the Roles section and the Permissions panel.](../.gitbook/assets/identity-and-access/user-group-view.png)
+![A user group's detail page on the Access tab, showing the Roles section and the Permissions panel.](../../.gitbook/assets/identity-and-access/user-group-view.png)
 
 ## How to add or remove users in a group
 
@@ -60,7 +60,7 @@ The new group opens with no users, roles, or permissions assigned yet.
 
 To remove a user, click the **×** (trash icon) at the end of their row.
 
-You can also manage membership from the user's own detail page — see [Users › How to assign roles and user groups](users.md#how-to-assign-roles-and-user-groups). Both routes produce the same result.
+You can also manage membership from the user's own detail page — see [Users › How to assign roles and user groups](../users.md#how-to-assign-roles-and-user-groups). Both routes produce the same result.
 
 ## How to assign roles to a user group
 
@@ -71,7 +71,7 @@ Use roles when you have a coherent bundle of permissions that the whole group sh
 3. Pick the roles to assign. Click an existing pill to remove a role.
 4. Click the confirmation checkmark to save.
 
-![Assigning roles to a user group; the role picker is open showing the available roles.](../.gitbook/assets/identity-and-access/user-group-assign-roles.png)
+![Assigning roles to a user group; the role picker is open showing the available roles.](../../.gitbook/assets/identity-and-access/user-group-assign-roles.png)
 
 See [Roles](roles.md) for how to create new roles.
 
@@ -84,11 +84,11 @@ You can also assign permissions to a group directly, bypassing roles. Use this f
 3. Click **Show resource** to add a resource. The resource picker opens.
 4. Pick the resource the group should have access to.
 
-    ![Editing a user group's permissions; the resource picker is open showing the available authorisation resources.](../.gitbook/assets/identity-and-access/user-group-add-resource.png)
+    ![Editing a user group's permissions; the resource picker is open showing the available authorisation resources.](../../.gitbook/assets/identity-and-access/user-group-add-resource.png)
 
 5. Click into the dropdown next to the resource and pick a permission group or individual permissions.
 
-    ![Editing a user group's permissions; the dropdown for a resource is open showing the available permission groups and individual permissions.](../.gitbook/assets/identity-and-access/user-group-permission-group-dropdown.png)
+    ![Editing a user group's permissions; the dropdown for a resource is open showing the available permission groups and individual permissions.](../../.gitbook/assets/identity-and-access/user-group-permission-group-dropdown.png)
 
 6. Repeat for every resource. Click **Save** when done.
 
@@ -145,7 +145,7 @@ What an administrator can do with user groups depends on which permission group 
 
 <summary><strong>I removed a user from a group, but they still seem to have access from it.</strong></summary>
 
-If the user is signed in, their existing session may still be using the access they had. Use **End sessions** on their user record to force a re-evaluation — see [Users › Admin actions](users.md#admin-actions). They'll pick up the updated access on their next sign-in.
+If the user is signed in, their existing session may still be using the access they had. Use **End sessions** on their user record to force a re-evaluation — see [Users › Admin actions](../users.md#admin-actions). They'll pick up the updated access on their next sign-in.
 
 The user might also be getting the same access through another group or directly. Open their detail page to see all assigned roles and groups.
 

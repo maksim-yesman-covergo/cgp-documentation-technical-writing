@@ -29,7 +29,7 @@ The platform ships with **system-defined** authorisation resources for every bui
 
 System-defined resources don't have their own list page — you discover them through the resource picker when you edit a [role](roles.md#how-to-assign-permissions-to-a-role) or a [user group's permissions](user-groups.md#how-to-assign-permissions-to-a-user-group-directly). The picker shows every authorisation resource (system and custom alike) with its permission groups and individual permissions.
 
-![The resource picker open while editing a role's permissions, showing the catalogue of available authorisation resources.](../.gitbook/assets/identity-and-access/role-add-resource.png)
+![The resource picker open while editing a role's permissions, showing the catalogue of available authorisation resources.](../../.gitbook/assets/identity-and-access/role-add-resource.png)
 
 ## How to define a custom authorisation resource
 
@@ -84,7 +84,7 @@ System-defined resources can't be updated or deleted via the API.
 
 See the [Authorisation Resource API](https://covergo-technologies.stoplight.io/docs/cgp-tenant-admin-service-oas/d5f07fc226461-authorisation-resource-api) for the full operation reference, request and response shapes, and try-it-out console.
 
-Authorisation resources are not versioned, can't be archived, and don't require a [publish](../todo-publish.md) step — changes go live immediately.
+Authorisation resources are not versioned, can't be archived, and don't require a [publish](../../todo-publish.md) step — changes go live immediately.
 
 ### Definition fields
 

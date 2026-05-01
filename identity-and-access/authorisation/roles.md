@@ -15,7 +15,7 @@ Roles are managed in **Identity and Access → Roles**. Every role you see in th
 ## Key concepts
 
 - **Role.** A named bundle of permissions. The same role can be assigned to many users and many user groups.
-- **ID.** A short, stable identifier you choose when creating the role (e.g. `claims-handler`, `read-only-auditor`). Used in audit logs and integrations; matched against the `roles` claim during [identity-provider role sync](authentication/identity-providers.md#how-role-sync-works).
+- **ID.** A short, stable identifier you choose when creating the role (e.g. `claims-handler`, `read-only-auditor`). Used in audit logs and integrations; matched against the `roles` claim during [identity-provider role sync](../authentication/identity-providers.md#how-role-sync-works).
 - **Permissions on a role.** A role's access is described as a set of selections per [authorisation resource](authorisation-resources.md) — for example, the `manage` group on `User` plus the `readonly` group on `Document`.
 
 ## How to find a role
@@ -25,7 +25,7 @@ Roles are managed in **Identity and Access → Roles**. Every role you see in th
 3. Sort by **Last updated** to find recently changed roles, or by **Number of users** to find heavily used ones.
 4. Click any row to open that role's detail page.
 
-![The Roles list with name, ID, number of users, and last-updated columns.](../.gitbook/assets/identity-and-access/roles-list.png)
+![The Roles list with name, ID, number of users, and last-updated columns.](../../.gitbook/assets/identity-and-access/roles-list.png)
 
 ## How to create a role
 
@@ -38,7 +38,7 @@ Roles are managed in **Identity and Access → Roles**. Every role you see in th
 
 The new role opens with no permissions assigned yet. Continue with [How to assign permissions to a role](#how-to-assign-permissions-to-a-role).
 
-![The Create Role dialog with Name, ID, and Description fields.](../.gitbook/assets/identity-and-access/create-role.png)
+![The Create Role dialog with Name, ID, and Description fields.](../../.gitbook/assets/identity-and-access/create-role.png)
 
 ## How to view a role
 
@@ -47,7 +47,7 @@ The new role opens with no permissions assigned yet. Continue with [How to assig
     - **Access** — the role's permissions, grouped by [authorisation resource](authorisation-resources.md).
     - **Users** — the users this role is directly assigned to.
 
-![The role detail page on the Access tab, showing the Permissions panel grouped by resource.](../.gitbook/assets/identity-and-access/role-view.png)
+![The role detail page on the Access tab, showing the Permissions panel grouped by resource.](../../.gitbook/assets/identity-and-access/role-view.png)
 
 ## How to assign permissions to a role
 
@@ -58,11 +58,11 @@ A role's access is built up resource by resource. For each [authorisation resour
 3. Click **Show resource** to add a new resource. The resource picker opens with the list of available resources.
 4. Pick the resource you want to grant access to.
 
-    ![Editing a role's permissions; the resource picker is open showing the available authorisation resources.](../.gitbook/assets/identity-and-access/role-add-resource.png)
+    ![Editing a role's permissions; the resource picker is open showing the available authorisation resources.](../../.gitbook/assets/identity-and-access/role-add-resource.png)
 
 5. Click into the dropdown next to the resource and choose a permission group (e.g. `Manage`, `Read Only`, `Admin`) or one or more individual permissions.
 
-    ![Editing a role's permissions; the dropdown for a resource is open showing the available permission groups (Admin, Read Only, Manage) and individual permissions.](../.gitbook/assets/identity-and-access/role-permission-group-dropdown.png)
+    ![Editing a role's permissions; the dropdown for a resource is open showing the available permission groups (Admin, Read Only, Manage) and individual permissions.](../../.gitbook/assets/identity-and-access/role-permission-group-dropdown.png)
 
 6. Repeat for every resource the role should cover. Remove a resource by clicking the **×** next to its row.
 7. Click **Save**.
@@ -80,9 +80,9 @@ A role's access is built up resource by resource. For each [authorisation resour
 
 The user appears in the table immediately, and the role is now part of their effective access.
 
-![The Users tab on a role's detail page, with the user search dropdown open.](../.gitbook/assets/identity-and-access/role-add-user.png)
+![The Users tab on a role's detail page, with the user search dropdown open.](../../.gitbook/assets/identity-and-access/role-add-user.png)
 
-You can also assign a role to a user from the user's own detail page — see [Users › How to assign roles and user groups](users.md#how-to-assign-roles-and-user-groups). Both routes have the same effect.
+You can also assign a role to a user from the user's own detail page — see [Users › How to assign roles and user groups](../users.md#how-to-assign-roles-and-user-groups). Both routes have the same effect.
 
 To remove a user from the role, click the **×** (trash icon) at the end of the row.
 
@@ -99,7 +99,7 @@ To remove a user from the role, click the **×** (trash icon) at the end of the 
 2. Click the gear icon at the top right.
 3. Choose **Delete** and confirm.
 
-Deleting a role removes it from every user and user group it was assigned to. Their access drops accordingly the next time they sign in (or sooner — see [Sessions](authentication/sessions.md)).
+Deleting a role removes it from every user and user group it was assigned to. Their access drops accordingly the next time they sign in (or sooner — see [Sessions](../authentication/sessions.md)).
 
 <!-- TODO: add screenshot of the gear-icon menu on a role's detail page showing the Delete action. -->
 

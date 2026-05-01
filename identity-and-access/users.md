@@ -61,7 +61,7 @@ Changes save inline — there's no separate **Save** button.
 
 ![The user detail page with the Roles dropdown open during role assignment.](../.gitbook/assets/identity-and-access/user-detail.png)
 
-For more on the building blocks themselves, see [Roles](roles.md) and [User Groups](user-groups.md).
+For more on the building blocks themselves, see [Roles](authorisation/roles.md) and [User Groups](authorisation/user-groups.md).
 
 ## How to restrict how a user signs in
 
@@ -148,7 +148,7 @@ What an administrator can do with users depends on which permission group they h
 | End a user's sessions | | | ✓ |
 | Manage a user's API keys | | | ✓ |
 
-See [Roles](roles.md) for how to grant an administrator one of these permission groups.
+See [Roles](authorisation/roles.md) for how to grant an administrator one of these permission groups.
 
 ## Troubleshooting
 
