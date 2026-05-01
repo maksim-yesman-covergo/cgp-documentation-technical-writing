@@ -23,7 +23,7 @@ This is the **only** way to change a password — there's no in-portal change-pa
 
 You can now sign in with the new password.
 
-![Set a New Password page with Username or email shown read-only, New Password, Confirm password, and a Submit button.](../.gitbook/assets/authentication/set-new-password.png)
+![Set a New Password page with Username or email shown read-only, New Password, Confirm password, and a Submit button.](../../.gitbook/assets/authentication/set-new-password.png)
 
 {% hint style="warning" %}
 **The reset link expires after 12 hours.** If your link no longer works, repeat the **Forgot Password?** flow from the sign-in screen to issue a fresh email.
@@ -38,7 +38,7 @@ When a user has lost access and needs help, you can trigger the same reset flow 
 3. Confirm the action.
 4. The user receives an email with a reset link valid for **12 hours**. They follow the user-side steps above.
 
-See [Users](../identity-and-access/users.md#admin-actions) for the gear-menu screenshot.
+See [Users](../users.md#admin-actions) for the gear-menu screenshot.
 
 ## If you sign in via an identity provider
 
@@ -52,7 +52,7 @@ The reset email's link is valid for **12 hours** from the time the email was sen
 
 ### Permissions
 
-To reset another user's password, you need the **Reset Password** permission on the `User` resource. See [Users › Permissions](../identity-and-access/users.md#permissions).
+To reset another user's password, you need the **Reset Password** permission on the `User` resource. See [Users › Permissions](../users.md#permissions).
 
 ### Password requirements
 
@@ -60,7 +60,7 @@ The new password must meet your organisation's [Password policy](password-policy
 
 ### Effect on suspension
 
-A successful password reset clears any active suspension on the user (the temporary lock after five failed sign-in attempts). See [Users › Suspension](../identity-and-access/users.md#suspension).
+A successful password reset clears any active suspension on the user (the temporary lock after five failed sign-in attempts). See [Users › Suspension](../users.md#suspension).
 
 ## Troubleshooting
 

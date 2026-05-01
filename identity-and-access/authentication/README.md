@@ -17,11 +17,11 @@ This chapter covers both, plus what happens after sign-in (sessions) and how you
 
 ## Key concepts
 
-- **User.** The account that represents a person, or a system, on the platform. Created by an administrator and identified by a username and email. See [Users](../identity-and-access/users.md).
+- **User.** The account that represents a person, or a system, on the platform. Created by an administrator and identified by a username and email. See [Users](../users.md).
 - **Credentials.** The proof you provide to sign in. Most often a password; can also be an [API key](api-keys.md), or trust delegated to an external [identity provider](identity-providers.md).
 - **Identity provider.** The service that verifies your credentials. By default, the platform verifies username and password itself. Administrators can configure additional identity providers — for example, your organisation's existing corporate sign-in — so users can sign in with accounts they already have. See [Identity Providers](identity-providers.md).
 - **Session.** The active period after you sign in to a portal, during which you can keep using the platform without signing in again.
-- **API key.** A key issued to a user that an external system can use to authenticate to the API as that user. API keys are managed on each user's detail page in [Identity and Access](../identity-and-access/README.md). See [API keys](api-keys.md).
+- **API key.** A key issued to a user that an external system can use to authenticate to the API as that user. API keys are managed on each user's detail page in [Identity and Access](../README.md). See [API keys](api-keys.md).
 - **Single sign-on (SSO).** Signing in once and being recognised across multiple systems that trust the same identity provider. The platform supports SSO across all of its portals, and can act as the identity provider for your own external applications. See [SSO for external applications](sso-for-external-applications.md).
 
 ## Signing in to a portal
@@ -81,5 +81,5 @@ See [SSO for external applications](sso-for-external-applications.md).
 
 ## Related pages
 
-- [Users](../identity-and-access/users.md) — managing the people who can sign in.
-- [Security](../todo-security.md) — the platform's overall security model.
+- [Users](../users.md) — managing the people who can sign in.
+- [Security](../../todo-security.md) — the platform's overall security model.

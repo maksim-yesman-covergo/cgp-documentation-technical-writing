@@ -15,7 +15,7 @@ Roles are managed in **Identity and Access → Roles**. Every role you see in th
 ## Key concepts
 
 - **Role.** A named bundle of permissions. The same role can be assigned to many users and many user groups.
-- **ID.** A short, stable identifier you choose when creating the role (e.g. `claims-handler`, `read-only-auditor`). Used in audit logs and integrations; matched against the `roles` claim during [identity-provider role sync](../authentication/identity-providers.md#how-role-sync-works).
+- **ID.** A short, stable identifier you choose when creating the role (e.g. `claims-handler`, `read-only-auditor`). Used in audit logs and integrations; matched against the `roles` claim during [identity-provider role sync](authentication/identity-providers.md#how-role-sync-works).
 - **Permissions on a role.** A role's access is described as a set of selections per [authorisation resource](authorisation-resources.md) — for example, the `manage` group on `User` plus the `readonly` group on `Document`.
 
 ## How to find a role
@@ -99,7 +99,7 @@ To remove a user from the role, click the **×** (trash icon) at the end of the 
 2. Click the gear icon at the top right.
 3. Choose **Delete** and confirm.
 
-Deleting a role removes it from every user and user group it was assigned to. Their access drops accordingly the next time they sign in (or sooner — see [Sessions](../authentication/sessions.md)).
+Deleting a role removes it from every user and user group it was assigned to. Their access drops accordingly the next time they sign in (or sooner — see [Sessions](authentication/sessions.md)).
 
 <!-- TODO: add screenshot of the gear-icon menu on a role's detail page showing the Delete action. -->
 

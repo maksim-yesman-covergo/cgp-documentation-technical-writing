@@ -34,13 +34,13 @@ Incognito and private windows are an exception. Each one is treated as a separat
 
 You're signed out of every portal and tab in this browser, and sent to the sign-in screen.
 
-![The user menu in the top right of the portal, with View Profile and Logout options.](../.gitbook/assets/authentication/logout-menu.png)
+![The user menu in the top right of the portal, with View Profile and Logout options.](../../.gitbook/assets/authentication/logout-menu.png)
 
 ## Other ways your session ends
 
 Apart from idle timeout, maximum lifetime, and signing out manually, your session can also end when:
 
-- **An administrator clicks End sessions** on your user record. See [Users › Admin actions](../identity-and-access/users.md#admin-actions). Actions you have in flight may complete for a short time afterwards; the next time you navigate, you'll be sent to the sign-in screen.
+- **An administrator clicks End sessions** on your user record. See [Users › Admin actions](../users.md#admin-actions). Actions you have in flight may complete for a short time afterwards; the next time you navigate, you'll be sent to the sign-in screen.
 - **An administrator deactivates your account.** Your session ends immediately and you won't be able to sign in again until the account is reactivated.
 
 ## Troubleshooting

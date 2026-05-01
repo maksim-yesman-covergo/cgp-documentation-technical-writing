@@ -39,6 +39,6 @@ A user's effective access is the union of everything granted by their roles and 
 
 ## Related pages
 
-- [Authentication](../authentication/README.md) — how the people you manage here actually sign in.
+- [Authentication](authentication/README.md) — how the people you manage here actually sign in.
 - [Audit Trail](../todo-audit-trail.md) — see what users have done.
 - [Security](../todo-security.md) — the platform's overall security model.

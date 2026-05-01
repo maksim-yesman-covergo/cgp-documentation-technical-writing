@@ -24,7 +24,7 @@ This page covers two flows on the same topic:
 
 Your account moves to **Active** status, and you can now sign in to any portal with your username or email and the password you just set.
 
-![Complete Verification page with Username or email shown read-only, New Password, Confirm password, and a Submit button.](../.gitbook/assets/authentication/complete-verification.png)
+![Complete Verification page with Username or email shown read-only, New Password, Confirm password, and a Submit button.](../../.gitbook/assets/authentication/complete-verification.png)
 
 {% hint style="warning" %}
 **The verification link expires after 12 hours.** If your link no longer works, ask your administrator to **resend** the verification email — that issues a fresh email with a new 12-hour window.
@@ -42,7 +42,7 @@ When a user didn't receive their verification email — or their 12-hour link ex
 2. Click **Resend Verification** at the top right of the detail page.
 3. The user receives a fresh email with a new 12-hour link. Any earlier links the user still has are invalidated.
 
-![User detail page for a Pending user, with the Resend Verification button at the top right.](../.gitbook/assets/authentication/resend-verification.png)
+![User detail page for a Pending user, with the Resend Verification button at the top right.](../../.gitbook/assets/authentication/resend-verification.png)
 
 {% hint style="info" %}
 **Resend Verification only shows for Pending users.** Once the user activates their account, the button is replaced by the regular admin actions menu (the gear icon).
@@ -52,7 +52,7 @@ When a user didn't receive their verification email — or their 12-hour link ex
 
 ### Permissions
 
-To resend a verification email for another user, you need the **Resend Verification** permission on the `User` resource. See [Users › Permissions](../identity-and-access/users.md#permissions).
+To resend a verification email for another user, you need the **Resend Verification** permission on the `User` resource. See [Users › Permissions](../users.md#permissions).
 
 ### Password requirements
 

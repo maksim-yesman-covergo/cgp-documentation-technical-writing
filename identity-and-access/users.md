@@ -17,7 +17,7 @@ Users are managed in **Identity and Access → Users**. Every user has a status 
     - **Active** — verified. They can sign in.
     - **Deactivated** — an administrator has revoked access. They cannot sign in until reactivated.
 - **Suspension.** An automatic 30-minute lock that prevents an Active user from signing in after five failed password attempts. It's independent of status — a suspended user is still **Active**, just blocked from signing in.
-- **Source.** How the user record was created. Either **Admin** (created in the UI by an administrator) or **IdP** (auto-created on first sign-in via an external identity provider — see [Identity Providers](../authentication/identity-providers.md)).
+- **Source.** How the user record was created. Either **Admin** (created in the UI by an administrator) or **IdP** (auto-created on first sign-in via an external identity provider — see [Identity Providers](authentication/identity-providers.md)).
 - **Authentication methods.** Which sign-in methods this specific user is allowed to use. By default a user can sign in with any method the platform supports; an administrator can restrict a user to fewer methods, or to none at all.
 
 ## How to find a user
@@ -38,7 +38,7 @@ Users are managed in **Identity and Access → Users**. Every user has a status 
     - **Phone** — optional, with country code.
 4. Decide the **Allow Login** toggle:
     - **On** (default) — the user can sign in with username and password and via any configured identity provider. The platform sends them an activation email straight away.
-    - **Off** — the user is created with all sign-in methods blocked. No activation email is sent. Use this for **API users** — accounts that exist only to own [API keys](../authentication/api-keys.md) for an integration.
+    - **Off** — the user is created with all sign-in methods blocked. No activation email is sent. Use this for **API users** — accounts that exist only to own [API keys](authentication/api-keys.md) for an integration.
 5. Click **Create**.
 
 The new user appears in the list. With **Allow Login** on, they're in **Pending** status until they verify their email; once verified, they move to **Active**. With **Allow Login** off, they're created in **Active** status with no sign-in possible — only API key access.
@@ -73,7 +73,7 @@ By default, a user can sign in with any method the platform supports — usernam
     - **Identity Providers** — switch from **All** to a specific subset, or block entirely.
 3. Changes save inline.
 
-If you set **Username and Password** to disallowed *and* **Identity Providers** to none, the user cannot sign in at all. This is the **API user** pattern — an account that exists only to own [API keys](../authentication/api-keys.md) for an integration. New users created with the **Allow Login** toggle off start in this configuration.
+If you set **Username and Password** to disallowed *and* **Identity Providers** to none, the user cannot sign in at all. This is the **API user** pattern — an account that exists only to own [API keys](authentication/api-keys.md) for an integration. New users created with the **Allow Login** toggle off start in this configuration.
 
 ![The user detail page with the Identity Providers dropdown open, showing All, None, and a list of specific providers.](../.gitbook/assets/identity-and-access/restrict-sign-in.png)
 
@@ -93,7 +93,7 @@ Click the gear icon at the top-right of the user detail page to open the admin a
 
 Each user can have **API keys** — credentials an external system uses to authenticate to the API as that user. They're managed on the user's **API Keys** tab.
 
-For details, see [API keys](../authentication/api-keys.md).
+For details, see [API keys](authentication/api-keys.md).
 
 ## Your own profile
 
@@ -156,7 +156,7 @@ See [Roles](roles.md) for how to grant an administrator one of these permission 
 
 <summary><strong>The user didn't receive their activation email.</strong></summary>
 
-Check that **Allow Login** was on when the user was created — if it was off, no email is sent. If it was on, ask the user to check their spam folder. As an administrator with the right permissions on Users, you can also [resend the verification email](../authentication/activate-account.md#how-to-resend-the-verification-email-administrators) or reset the user's password to issue a fresh activation flow.
+Check that **Allow Login** was on when the user was created — if it was off, no email is sent. If it was on, ask the user to check their spam folder. As an administrator with the right permissions on Users, you can also [resend the verification email](authentication/activate-account.md#how-to-resend-the-verification-email-administrators) or reset the user's password to issue a fresh activation flow.
 
 </details>
 

@@ -47,7 +47,7 @@ The platform is organised around a set of capabilities you can use independently
 
 Sign in with email and password, single sign-on, or an external identity provider. Manage your sessions and keep accounts safe.
 
-➡ [Authentication](authentication/README.md) · [Identity Providers](authentication/identity-providers.md)
+➡ [Authentication](identity-and-access/authentication/README.md) · [Identity Providers](identity-and-access/authentication/identity-providers.md)
 
 </details>
 
@@ -182,7 +182,7 @@ Whether you've just been invited to the platform or you've been handed the keys 
 
 ### 1. Sign in for the first time
 
-Open the link your administrator sent you and set your password. → [Authentication](authentication/README.md)
+Open the link your administrator sent you and set your password. → [Authentication](identity-and-access/authentication/README.md)
 
 ### 2. Find your way around
 
@@ -232,4 +232,4 @@ Code, identifiers, and field names appear in `monospace`. Screenshots show the p
 
 ***
 
-Ready when you are. Pick a chapter from the left, or start with [Authentication](authentication/README.md) and follow the trail.
+Ready when you are. Pick a chapter from the left, or start with [Authentication](identity-and-access/authentication/README.md) and follow the trail.

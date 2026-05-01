@@ -32,7 +32,7 @@ When an external provider is configured, it appears as a button on the sign-in s
 
 Identity providers live under **Settings → Security → Identity Providers**.
 
-![The Identity Providers tab under Settings → Security, showing the list of configured providers.](../.gitbook/assets/authentication/identity-providers-list.png)
+![The Identity Providers tab under Settings → Security, showing the list of configured providers.](../../.gitbook/assets/authentication/identity-providers-list.png)
 
 1. Click **+ Add**. The **Add Identity Provider** page opens.
 2. Fill in the basics:
@@ -42,7 +42,7 @@ Identity providers live under **Settings → Security → Identity Providers**.
     - **Authentication** — pick **Sign-In Only** for existing users only, or **Sign-In and Sign-Up** to also allow new accounts to be created on first sign-in through this provider.
     - **Role Sync Mode** — leave at **None** unless you want roles to sync from the upstream provider.
 
-    ![The top half of the Add Identity Provider page with Name, Alias, Order Number, Authentication, and Role Sync Mode.](../.gitbook/assets/authentication/add-identity-provider-top.png)
+    ![The top half of the Add Identity Provider page with Name, Alias, Order Number, Authentication, and Role Sync Mode.](../../.gitbook/assets/authentication/add-identity-provider-top.png)
 
 3. In **Provider Configuration**, choose a **Type** from the dropdown and fill in the fields that appear for that type. See [Supported provider types](#supported-provider-types) below for the fields each type expects.
 4. Click **Add** in the top right.
@@ -55,7 +55,7 @@ The new provider appears in the list and as a button on the sign-in screen — u
 - block username and password sign-in, and
 - only allow sign-in via the identity provider that created the account.
 
-This keeps each account tied to the way it was originally created. An administrator can lift either restriction later on the user's detail page — see [Users › How to restrict how a user signs in](../identity-and-access/users.md#how-to-restrict-how-a-user-signs-in).
+This keeps each account tied to the way it was originally created. An administrator can lift either restriction later on the user's detail page — see [Users › How to restrict how a user signs in](../users.md#how-to-restrict-how-a-user-signs-in).
 {% endhint %}
 
 ## How to view or edit an identity provider
@@ -65,13 +65,13 @@ This keeps each account tied to the way it was originally created. An administra
 3. Click **Edit** in the **Provider Configuration** card. Both the top-of-page details (Name, Order Number, Authentication, Role Sync Mode) and the Provider Configuration fields become editable.
 4. Click **Save** to apply your changes, or **Cancel** to discard.
 
-![The view page for an identity provider, showing the read-only details card on top and the Provider Configuration card with an Edit button.](../.gitbook/assets/authentication/identity-provider-view.png)
+![The view page for an identity provider, showing the read-only details card on top and the Provider Configuration card with an Edit button.](../../.gitbook/assets/authentication/identity-provider-view.png)
 
 ## How to archive or delete an identity provider
 
 Click the gear icon at the top right of a provider's view page to **Archive** or **Delete** it.
 
-![The gear-icon menu on an identity provider's view page, showing the Archive and Delete options.](../.gitbook/assets/authentication/identity-provider-actions.png)
+![The gear-icon menu on an identity provider's view page, showing the Archive and Delete options.](../../.gitbook/assets/authentication/identity-provider-actions.png)
 
 - **Archive** keeps the provider in the list with an **Archived** badge, but it no longer appears as a button on the sign-in screen and can't be used for new sign-ins. Existing users who signed in via the provider keep their accounts. An archived provider can be unarchived later.
 - **Delete** removes the provider entirely. Users who were created via this provider keep their accounts but lose this sign-in option. Use this when a provider was created by mistake; prefer **Archive** when there's any history to preserve.
@@ -83,7 +83,7 @@ When **Role Sync Mode** is set to **Sign-Up** or **Sign-In**, the platform syncs
 For sync to work:
 
 - Your upstream provider must include a `roles` claim in the token issued to the platform — typically a list of role identifiers.
-- The IDs in the claim must match the IDs of [Roles](../identity-and-access/roles.md) defined on the platform.
+- The IDs in the claim must match the IDs of [Roles](../roles.md) defined on the platform.
 
 When the platform receives the token, it **replaces** the user's direct role assignments with the matched set — every existing assignment is removed, and only roles whose IDs match the claim apply going forward. IDs in the claim that don't match a platform role are ignored.
 
@@ -140,7 +140,7 @@ What an administrator can do with identity providers depends on which permission
 | Archive or unarchive | | | ✓ |
 | Delete | | | ✓ |
 
-See [Roles](../identity-and-access/roles.md) for how to grant an administrator one of these permission groups.
+See [Roles](../roles.md) for how to grant an administrator one of these permission groups.
 
 ## Troubleshooting
 
@@ -173,7 +173,7 @@ Other things to check:
 Check that:
 
 - The provider isn't archived. Archived providers stay in the list (with an **Archived** badge) but no longer appear on sign-in.
-- Your user account isn't restricted to a specific subset of identity providers — see [Users](../identity-and-access/users.md#how-to-restrict-how-a-user-signs-in).
+- Your user account isn't restricted to a specific subset of identity providers — see [Users](../users.md#how-to-restrict-how-a-user-signs-in).
 
 </details>
 

@@ -24,7 +24,7 @@ You're sent to the page you originally requested.
 
 If you've forgotten your password, click **Forgot Password?** below the password field and follow the email link the platform sends — see [Reset your password](reset-password.md).
 
-![Sign in to your account screen with Username or email and Password fields, the Forgot Password? link, the Login button, and identity-provider buttons under "Or sign in with".](../.gitbook/assets/authentication/sign-in.png)
+![Sign in to your account screen with Username or email and Password fields, the Forgot Password? link, the Login button, and identity-provider buttons under "Or sign in with".](../../.gitbook/assets/authentication/sign-in.png)
 
 ## How to sign in with an identity provider
 
@@ -50,7 +50,7 @@ This message is deliberately vague — for security, the platform doesn't reveal
 
 If you enter the wrong password **five times in a row**, your account is automatically suspended for 30 minutes. You'll keep seeing the same generic error during that window. You can wait it out, or click **Forgot Password?** to issue a reset email — a successful password reset clears the suspension. See [Reset your password](reset-password.md).
 
-If you're sure the username and password are correct and you still can't sign in, ask your administrator to check the status of your account and your authentication methods. See [Users](../identity-and-access/users.md).
+If you're sure the username and password are correct and you still can't sign in, ask your administrator to check the status of your account and your authentication methods. See [Users](../users.md).
 
 </details>
 

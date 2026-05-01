@@ -18,7 +18,7 @@ API keys are managed on each user's **API Keys** tab in **Identity and Access �
 - **ID.** A short identifier you choose for the key when you create it. Visible in the API keys list and useful for spotting which key is calling — for example, naming the key after the integration that owns it (`billing-sync`, `nightly-export`). It does **not** authenticate requests; only the secret does.
 - **Expiration.** An optional date and time after which the key stops working. You can extend it any time before it expires; once expired, a key can only be removed and replaced.
 - **Last Used.** The most recent moment the key was accepted on a request. Useful for spotting unused keys and confirming an integration is alive.
-- **Permission inheritance.** A key always carries every permission of the user who owns it — there is no per-key scoping. **Choose the owning user carefully**: give an integration its own dedicated user with only the permissions it actually needs (see the [API user pattern](../identity-and-access/users.md#how-to-restrict-how-a-user-signs-in)).
+- **Permission inheritance.** A key always carries every permission of the user who owns it — there is no per-key scoping. **Choose the owning user carefully**: give an integration its own dedicated user with only the permissions it actually needs (see the [API user pattern](../users.md#how-to-restrict-how-a-user-signs-in)).
 
 ## How to create an API key
 
@@ -31,7 +31,7 @@ API keys are managed on each user's **API Keys** tab in **Identity and Access �
     - **Set Expiration** — toggle on if the key should expire. Pick a preset (**90 Days**, **180 Days**, **365 Days**) or a specific **Expiration Date-Time**. Toggle off for a key that never expires.
 5. Click **Create**.
 
-![Create API Key side panel with Name, ID, Set Expiration toggle, Expiration Date-Time, and the 90 / 180 / 365 Days presets.](../.gitbook/assets/authentication/create-api-key.png)
+![Create API Key side panel with Name, ID, Set Expiration toggle, Expiration Date-Time, and the 90 / 180 / 365 Days presets.](../../.gitbook/assets/authentication/create-api-key.png)
 
 The platform shows the **API Key Created** dialog with the secret. **Copy it now** — once you close the dialog, the secret is gone and cannot be retrieved.
 
@@ -39,11 +39,11 @@ The platform shows the **API Key Created** dialog with the secret. **Copy it now
 **The secret is shown once and only once.** Copy it from the **API Key Created** dialog before clicking **Done**. Store it somewhere safe — a password manager, a secrets vault, your application's environment configuration. If you lose the secret, the key cannot be recovered; remove it and create a new one.
 {% endhint %}
 
-![API Key Created dialog showing the one-time secret with Copy and Done buttons.](../.gitbook/assets/authentication/api-key-created.png)
+![API Key Created dialog showing the one-time secret with Copy and Done buttons.](../../.gitbook/assets/authentication/api-key-created.png)
 
 After **Done**, the key appears in the list with its name, ID, expiration, creation date, and last-used time.
 
-![API Keys list with Name, ID, Expiration, Created, and Last Used columns.](../.gitbook/assets/authentication/api-keys-list.png)
+![API Keys list with Name, ID, Expiration, Created, and Last Used columns.](../../.gitbook/assets/authentication/api-keys-list.png)
 
 ## How to update an API key
 
@@ -57,7 +57,7 @@ You can rename a key or change its expiration any time **before** it expires. Af
 
 ID, Status, and the creation metadata (Created, Last Used, Created By, Last Updated) are read-only — they can't be changed from this panel.
 
-![Edit API Key panel with editable Name and Expiration Date-Time fields, plus read-only ID, Status, and metadata.](../.gitbook/assets/authentication/edit-api-key.png)
+![Edit API Key panel with editable Name and Expiration Date-Time fields, plus read-only ID, Status, and metadata.](../../.gitbook/assets/authentication/edit-api-key.png)
 
 {% hint style="info" %}
 **Set a reminder a few days before expiry.** Once a key expires, the integration breaks until you create a new key and roll the integration over to the new secret.
@@ -70,7 +70,7 @@ Removing a key invalidates it immediately. Subsequent requests with the key are 
 1. On the **API Keys** tab, hover over the key.
 2. Click the **remove** (trash) icon at the end of the row and confirm.
 
-![API Keys list with the row actions revealed on hover, showing the edit and remove icons.](../.gitbook/assets/authentication/api-keys-list-actions.png)
+![API Keys list with the row actions revealed on hover, showing the edit and remove icons.](../../.gitbook/assets/authentication/api-keys-list-actions.png)
 
 {% hint style="info" %}
 **You must remove a user's keys before you can deactivate them.** A user with one or more active API keys cannot be deactivated. Remove the keys first if you need to deactivate the account.
@@ -108,7 +108,7 @@ If your client can't set custom headers — for example, on a browser GET to a d
 ### Permissions
 
 - **Your own API keys.** Every user can create, edit, and remove their own keys without any additional permission.
-- **Another user's API keys.** Requires the permissions for managing API keys on the `User` resource (granted through a role). See [Users › Permissions](../identity-and-access/users.md#permissions) for which permissions cover which actions.
+- **Another user's API keys.** Requires the permissions for managing API keys on the `User` resource (granted through a role). See [Users › Permissions](../users.md#permissions) for which permissions cover which actions.
 
 ### Limits
 
@@ -139,7 +139,7 @@ Check, in order:
 2. The `X-Tenant` header is set to your platform identifier.
 3. The key hasn't expired — open the user's **API Keys** tab and check the **Expiration** column.
 4. The key hasn't been removed.
-5. The owning user is **Active** and not currently suspended. Keys stop working when the user can't sign in. See [Users](../identity-and-access/users.md).
+5. The owning user is **Active** and not currently suspended. Keys stop working when the user can't sign in. See [Users](../users.md).
 6. The owning user has the permissions for the operation you're calling — keys inherit the user's permissions exactly.
 
 </details>

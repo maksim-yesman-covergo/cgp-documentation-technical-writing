@@ -31,7 +31,7 @@ Three screens enforce the policy:
 - **Set a New Password** — when your password expired or an administrator reset it.
 - **Reset password** — when you forgot your password and asked for a reset. See [Reset your password](reset-password.md).
 
-![Set a New Password page with the password requirements panel listing the rules.](../.gitbook/assets/authentication/password-policy.png)
+![Set a New Password page with the password requirements panel listing the rules.](../../.gitbook/assets/authentication/password-policy.png)
 
 The platform also expires passwords periodically. When yours expires, the next time you sign in you'll be sent to the **Set a New Password** page to choose a new one before you can continue.
 
