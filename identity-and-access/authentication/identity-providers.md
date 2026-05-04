@@ -83,7 +83,7 @@ When **Role Sync Mode** is set to **Sign-Up** or **Sign-In**, the platform syncs
 For sync to work:
 
 - Your upstream provider must include a `roles` claim in the token issued to the platform — typically a list of role identifiers.
-- The IDs in the claim must match the IDs of [Roles](../roles.md) defined on the platform.
+- The IDs in the claim must match the IDs of [Roles](../authorisation/roles.md) defined on the platform.
 
 When the platform receives the token, it **replaces** the user's direct role assignments with the matched set — every existing assignment is removed, and only roles whose IDs match the claim apply going forward. IDs in the claim that don't match a platform role are ignored.
 
@@ -140,7 +140,7 @@ What an administrator can do with identity providers depends on which permission
 | Archive or unarchive | | | ✓ |
 | Delete | | | ✓ |
 
-See [Roles](../roles.md) for how to grant an administrator one of these permission groups.
+See [Roles](../authorisation/roles.md) for how to grant an administrator one of these permission groups.
 
 ## Troubleshooting
 

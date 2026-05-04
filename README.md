@@ -57,7 +57,7 @@ Sign in with email and password, single sign-on, or an external identity provide
 
 Manage users, group them by team or function, assign roles that bundle the right permissions, and control access to resources at the level of detail your business needs.
 
-➡ [Identity and Access](identity-and-access/README.md) · [Users](identity-and-access/users.md) · [User Groups](identity-and-access/user-groups.md) · [Roles](identity-and-access/roles.md) · [Authorisation Resources](identity-and-access/authorisation-resources.md)
+➡ [Identity and Access](identity-and-access/README.md) · [Users](identity-and-access/users.md) · [User Groups](identity-and-access/authorisation/user-groups.md) · [Roles](identity-and-access/authorisation/roles.md) · [Authorisation Resources](identity-and-access/authorisation/authorisation-resources.md)
 
 </details>
 
